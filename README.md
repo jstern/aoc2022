@@ -1,6 +1,6 @@
 # aoc2022
 
-[![Build Status - GitHub Actions][gha-badge]][gha-ci]
+![build status](https://github.com/jstern/aoc2022/workflows/build/badge.svg)
 
 Solution attempts for https://adventofcode.com/2022 using TypeScript because I don't know TypeScript so good.
 
