@@ -2,7 +2,7 @@
 
 ![build status](https://github.com/jstern/aoc2022/workflows/build/badge.svg)
 
-Solution attempts for https://adventofcode.com/2022 using TypeScript because I don't know TypeScript so good.
+Solution attempts for https://adventofcode.com/2022 using TypeScript because I don't know TypeScript so good. (Also has some 2015 solutions I'm doing to warm up.)
 
 Built using https://github.com/jsynowiec/node-typescript-boilerplate as a template (see [original](./original/README.md)).
 
