@@ -44,6 +44,7 @@ export function part2(input: string): string {
     let total = 0;
     const rucksacks = lines(input);
     for (let i = 0; i < rucksacks.length; i += 3) {
+        // get a load of this cast of characters
         const common = findCommon(
             allCommon(chars(rucksacks[i]) as Item[], chars(rucksacks[i+1]) as Item[]), 
             chars(rucksacks[i+2]) as Item[]
