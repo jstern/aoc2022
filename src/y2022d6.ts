@@ -1,8 +1,10 @@
-import { chars } from "./util.js";
+import { chars } from './util.js';
 
 function updateWindow(size: number, window: string[], c: string): void {
   window.push(c);
-  if (window.length > size) { window.shift(); }
+  if (window.length > size) {
+    window.shift();
+  }
 }
 
 function startsSignal(size: number, window: string[]): boolean {
