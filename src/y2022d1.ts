@@ -26,7 +26,9 @@ export function part2(input: string): string {
       top3.push(cur);
       if (top3.length > 3) {
         // If we have more than 3, sort highest to lowest...
-        top3.sort((a, b) => { return a > b ? -1 : (a == b ? 0 : 1); });
+        top3.sort((a, b) => {
+          return a > b ? -1 : a == b ? 0 : 1;
+        });
         // and then drop the last (lowest) value.
         top3.pop();
       }

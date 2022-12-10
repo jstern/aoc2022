@@ -17,8 +17,12 @@ export class Stack<Type> {
     }
   }
 
-  push(val: Type): void {
-    this.items.push(val);
+  push(val: Type | Type[]): void {
+    if (val instanceof Array<Type>) {
+      this.items = this.items.concat(val);
+    } else {
+      this.items.push(val);
+    }
   }
 
   pop(): Type {
@@ -26,8 +30,8 @@ export class Stack<Type> {
     return this.items.pop();
   }
 
-  peek(): Type {
-    this.checkEmpty();
+  peek(): Type | null {
+    if (this.empty()) return null;
     return this.items[this.items.length - 1];
   }
 
@@ -37,5 +41,12 @@ export class Stack<Type> {
 
   empty(): boolean {
     return this.size() == 0;
+  }
+
+  popN(n: number): Type[] {
+    const pivot = this.items.length - n;
+    const result = this.items.slice(pivot);
+    this.items = this.items.slice(0, pivot);
+    return result;
   }
 }
