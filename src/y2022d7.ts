@@ -11,7 +11,7 @@ function pathAt(path: string, name: string): string {
   return `${path}${pre}${name}`;
 }
 
-function cd(session: session, dest: string) {
+function cd(session: session, dest: string): void {
   if (dest == '..') {
     if (session.path != '/') {
       session.path = session.path.slice(0, session.path.lastIndexOf('/'));

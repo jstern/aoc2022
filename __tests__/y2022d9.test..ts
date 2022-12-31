@@ -1,4 +1,4 @@
-import { follow, part2 } from '../src/y2022d9.js';
+import { follow } from '../src/y2022d9.js';
 
 describe('follow', () => {
   it('stays put if covered', () => {

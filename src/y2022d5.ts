@@ -21,7 +21,7 @@ export function layer(instr: string): Map<string, string> {
 export function stackEmUp(
   layers: Stack<Map<string, string>>,
   stacks: Map<string, Stack<string>>,
-) {
+): void {
   while (!layers.empty()) {
     const layer = layers.pop();
     layer.forEach(function addToStack(v, k) {
