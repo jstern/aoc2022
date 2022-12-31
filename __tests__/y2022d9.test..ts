@@ -28,18 +28,3 @@ describe('follow', () => {
     expect(follow([4, 3], [5, 2])).toEqual([4, 3]);
   });
 });
-
-const sample2 = `R 5
-U 8
-L 8
-D 3
-R 17
-D 10
-L 25
-U 20`;
-
-describe('part2', () => {
-  it('works', () => {
-    expect(part2(sample2)).toEqual(36);
-  });
-});
